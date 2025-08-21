@@ -1,1 +1,63 @@
+    html { scroll-behavior: smooth; }
+    .gradient-text { background: linear-gradient(90deg,#06b6d4,#9333ea,#f43f5e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    #particles-js { position: absolute; width: 100%; height: 100%; z-index: 0; }
+    #scroll-progress { position: fixed; top: 0; left: 0; width: 0%; height: 6px; background: linear-gradient(to right, #06b6d4, #9333ea, #f43f5e); z-index: 1000; border-radius: 0 4px 4px 0; transition: width 0.25s ease-out; }
+    #scrollTopBtn { position: fixed; bottom: 30px; right: 30px; background: linear-gradient(to right, #06b6d4, #9333ea); color: white; padding: 12px; border-radius: 50%; font-size: 24px; cursor: pointer; display: none; z-index: 1000; transition: transform 0.3s, box-shadow 0.3s; }
+    #scrollTopBtn:hover { transform: scale(1.15); box-shadow: 0 0 20px rgba(6,182,212,0.7); }
+    /* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* bar ki width */
+}
 
+::-webkit-scrollbar-track {
+  background: #0f172a; /* dark track (gray-950) */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #06b6d4, #9333ea, #f43f5e); /* gradient thumb */
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #f43f5e, #9333ea, #06b6d4); /* hover par reverse gradient */
+}
+
+  /* Default = Dark Mode */
+  body {
+    background-color: #0f172a; /* Dark */
+    color: #f1f5f9;
+  }
+
+  /* Light Mode Overrides */
+  body.light-mode {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+  }
+  body.light-mode nav {
+    background: rgba(255, 255, 255, 0.9) !important;
+    color: #111827 !important;
+  }
+  body.light-mode section,
+  body.light-mode footer,
+  body.light-mode .bg-gray-900,
+  body.light-mode .bg-gray-800,
+  body.light-mode .bg-gray-950 {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+  }
+  body.light-mode input,
+  body.light-mode textarea {
+    background-color: #f9fafb !important;
+    border: 1px solid #e5e7eb !important;
+    color: #111827 !important;
+  }
+  body.light-mode .tag {
+    background: #f1f5f9 !important;
+    color: #111827 !important;
+  }
+  body.light-mode .rounded-2xl,
+  body.light-mode .shadow-lg,
+  body.light-mode .border {
+    border-color: #e5e7eb !important;
+  }
